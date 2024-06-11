@@ -1,0 +1,75 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 10px;
+  position: relative;
+  padding: 20px;
+}
+
+.products .card {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 15px 0px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition:  0.5s ease;
+}
+
+.products .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.545) 0px 0px 15px 0px;
+
+}
+
+.products .card .image {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  padding: 10px;
+}
+
+.products .card .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+
+.card .product_details{
+    padding: 10px;
+    width: 100%;
+    transition: 0.5s ease;
+    background-color: #fff;
+}
+
+.card:hover .product_details{
+    transform: translateY(-20px);
+}
+
+.product_details .price_box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0px;
+}
+
+.price_box .price{
+    font-weight: 500;
+    color: #000;
+    font-size: 22px;
+}
+
+.price_box .discounted_price{
+  color: #575757;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.price_box .discounte{
+    color: teal;
+    font-size: 17px;
+    font-weight: 500;
+}
